@@ -11,9 +11,6 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.get('/', (req, res) => {
-  res.send('API is working!');
-});
 
 // Route middleware
 app.use('/auth', authRoutes);
